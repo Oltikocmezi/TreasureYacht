@@ -1,0 +1,246 @@
+*{
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+  }
+  
+  .YachtClub-Header{
+    display: flex;
+    align-items: center;
+    background-image: url("../../assets/img/Location/LocationHeader.jpg");
+    background-position: bottom; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+ 
+  .info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    text-align: center;
+    width: 700px;
+    height: 50vh;
+  }
+  .info-container h1{
+    font-weight: 300;
+    font-size: 90px;
+    border-bottom: 3px solid rgb(238, 115, 0);
+  }
+
+  .info-container h3{
+    position: relative;
+    top: 20px;
+    padding: 20px;
+    font-weight: 200;
+    font-size: 40px;
+    border-left: 3px solid rgb(238, 115, 0);
+  }
+
+ 
+
+  /* -------Body------- */
+
+
+  #YachtClub{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+  }
+      /* --------Parent1------ */
+  .ClubParent1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+  }
+
+  .ClubChild1, .ClubChild2{
+    width: 50%;
+    height: 100%;
+  }
+
+  .ClubChild1{
+    background-color: #BDA05B;
+  }
+
+  .ClubChild2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Child1H1{
+    position: relative;
+    font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    top: 50px;
+    left: 50px;
+    color:#00214D;
+    font-size: 60px;
+    font-weight: 200;
+  }
+
+  .Child1H3{
+    position: relative;
+    top: 70px;
+    left: 50px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 200;
+    width: 800px;
+    font-family: 'Dancing Script', cursive;
+    border-left: 2px solid #00214D;
+    padding-left: 10px;
+  }
+
+  .Child2P{
+    position: relative;
+    font-family: "Gotham A","Gotham B";
+    line-height: 144.5%;
+    color: #414141;
+    width: 90%;
+    text-align: start;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-left: 2px solid #00214D;
+    padding-left: 10px;
+  }
+
+    /* -------ClubParent2-------- */
+
+
+ .ClubParent2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60vh;
+  }
+
+  .ClubChild3{
+    width: 60%;
+    height: 100%;
+    background-image: url('../../assets/img/Location/Membership.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  .ClubChild4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+  }
+
+  .Child4H1{
+    position: relative;
+    font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    left: 50px;
+    color:#00214D;
+    font-size: 60px;
+    font-weight: 200;
+  }
+
+  .Child4P2{
+    position: relative;
+    left: 50px;
+    top: 20px;
+    font-family: "Gotham A","Gotham B";
+    line-height: 144.5%;
+    color: #414141;
+    width: 70%;
+    text-align: start;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-left: 2px solid #00214D;
+    padding-left: 10px;
+  }
+
+  .MemberButton{
+    position: relative;
+    text-decoration: none;
+    font-family: "Gotham A","Gotham B";
+    top: 50px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 200;
+    width: 210px;
+    height: 50px;
+    padding: 15px;
+    color: #fff;
+    background-color: #00214D;
+    border: 2px solid #00214D;
+    transition: 0.7s all ease;
+  }
+
+  .MemberButton:hover{
+    color: #00214D;
+    background-color: #fff;
+    border: 2px solid #00214D;
+    transition: 0.7s all ease-out;
+  }
+
+  /* ---------Reggatas---------- */
+
+  .Regattas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+  }
+
+  .RegattasChild1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+  }
+
+  .RegattasH1{
+    position: relative;
+    left: 70px;
+    align-self: flex-start;
+    font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    color:#00214D;
+    font-size: 60px;
+    font-weight: 200;
+  }
+  
+  .RegattasP{
+    position: relative;
+    top: 20px;
+    font-family: "Gotham A","Gotham B";
+    line-height: 144.5%;
+    color: #414141;
+    width: 600px;
+    text-align: start;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-left: 2px solid #00214D;
+    padding-left: 10px;
+  }
+  
+  .ReggatasChild2{
+    padding-left: 50px;
+    width: 60%;
+    height: 70%;
+    background-image: url('../../assets/img/Location/Reagattas.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+

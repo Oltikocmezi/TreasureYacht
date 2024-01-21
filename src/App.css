@@ -1,38 +1,214 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body {
+  font-size: 18px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* --------Display Screen--------- */
+
+#Home{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.display-container{
+  width: 100%;
+  height: 100%;
+  position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+#Home h1{
+    position: absolute;
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    font-weight: inherit;
+    color: #f0ffff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#Home p{
+    position: absolute;
+    margin-top: 125px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: inherit;
+    font-size: 40px;
+    color: #f0ffff;
 }
+
+
+#Home a{
+    position: absolute;
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #a2622b;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all .35s;
+  
+}
+#Home a:hover{
+    width: 250px;
+    color: #f0ffff;
+    margin-left: 55px;
+}
+
+.Speed-boat{
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  margin-left: 20px;
+  
+}
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+
+
+/* -----------ABOUT------------ */
+
+
+.about{
+  display: flex;
+  flex-direction: column;
+  background-image: url('./assets/img/Body/body-bg.webp');
+  width: 100%;
+  height: max-content;
+
+}
+
+.ButtonParent{
+  width: 100%;
+  height: 20vh;
+}
+
+.aboutButton{
+  position: relative;
+  left: 50px;
+  top: 50px;
+  text-decoration: none;
+  font-family: "Gotham A","Gotham B";
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  font-weight: 200;
+  padding: 15px;
+  color: #fff;
+  background-color: #00214D;
+  border: 2px solid #00214D;
+  transition: 0.5s all ease;
+}
+
+.aboutButton:hover{
+  color: #00214D;
+  background-color: #fff;
+  border: 2px solid #00214D;
+  transition: 0.5s all ease-out;
+}
+
+
+.aboutItems{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Title{
+  color: #00214D;
+  min-width: 500px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-size: 40px;
+  color: rgb(165, 143, 21);
+}
+
+.Cards{
+  display: flex;
+  margin-top: 60px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+}
+
+.Card1, .Card2, .Card3, .Card4{
+  position: static;
+  width: 20%;
+  min-width: 300px;
+  height: 100%;
+  border: 3px solid rgb(165, 143, 21);
+  display: flex;
+  flex-direction: column;
+  align-items:baseline;
+  background-color: rgb(250, 248, 248);
+  border-radius: 10px;
+}
+
+.verified{
+  position: relative;
+  left: 30px;
+  margin-top: 10px;
+  color: rgb(165, 143, 21);
+  width: 80px;
+  height: 70px;
+}
+
+.safe{
+  border-left: 2px solid #414141;
+  padding-left: 10px;
+  position: relative;
+  left: 30px;
+  top: 20px;
+  font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 1.55rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.safeText{
+  position: relative;
+  width: 300px;
+  min-width: 100px;
+  text-align: start;
+  font-weight: 100;
+  top: 50px;
+  padding: 20px;
+  font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  color: #414141;
+}
+

@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Display from './Pages/Display';
+import Home from './Pages/Home';
+import Yacht from './Pages/Yacht';
+import Events from './Pages/Events';
+import YachtClub from './Pages/YachtClub';
+import About from './Pages/About';
+import Commitment from './Pages/Commitment';
+import MembershipContent from './components/Membership/MembershipContent';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Display />} />
+                <Route path='/Home' element={<Home />} />
+                <Route path='/Yacht' element={<Yacht />} />
+                <Route path='/Events' element={<Events />} />
+                <Route path='/YachtClub' element={<YachtClub />} />
+                <Route path='/About' element={<About />} />
+                <Route path='/Commitment' element={<Commitment />} />
+                <Route path='/Membership' element={<MembershipContent />} />
+            </Routes>
+        </BrowserRouter>
     </div>
   );
-}
+
+  }
+
 
 export default App;
