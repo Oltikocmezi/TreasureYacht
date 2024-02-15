@@ -4,30 +4,30 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   font-size: 18px;
   font-weight: 400;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
-  
 }
 
 /* --------Display Screen--------- */
 
-#Home{
+#Home {
   display: flex;
   justify-content: center;
   width: 100%;
   height: 100vh;
 }
 
-video{
+video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.display-container{
+.display-container {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -37,178 +37,102 @@ video{
   align-items: center;
 }
 
-#Home h1{
-    position: absolute;
-    font-family: 'Dancing Script', cursive;
-    font-size: 60px;
-    font-weight: inherit;
-    color: #f0ffff;
+#Home h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 60px;
+  font-weight: inherit;
+  color: #f0ffff;
 }
 
-#Home p{
-    position: absolute;
-    margin-top: 125px;
-    font-family: 'Dancing Script', cursive;
-    font-weight: inherit;
-    font-size: 40px;
-    color: #f0ffff;
+#Home p {
+  font-family: "Dancing Script", cursive;
+  font-weight: inherit;
+  font-size: 40px;
+  color: #f0ffff;
 }
 
-
-#Home a{
-    position: absolute;
-    margin-top: 250px;
-    display: flex;
-    justify-content: center;
-    width: 250px;
-    height: 50px;
-    line-height: 50px;
-    font-weight: bold;
-    text-decoration: none;
-    background: #a2622b;
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all .35s;
-  
-}
-#Home a:hover{
-    width: 250px;
-    color: #f0ffff;
-    margin-left: 55px;
-}
-
-.Speed-boat{
-  justify-self: center;
-  align-self: center;
+#Home a {
+  position: relative;
+  top: 50px;
   display: flex;
-  margin-left: 20px;
-  
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 60px;
+  text-decoration: none;
+  background: #a2622b96;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.35s;
+}
+#Home a:hover {
+  background: #a2622b;
 }
 
-.overlay{
+.Speed-boat {
+  position: relative;
+  left: 20px;
+}
+
+.overlay {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
-
-
 
 /* -----------ABOUT------------ */
-
-
-.about{
-  display: flex;
-  flex-direction: column;
-  background-image: url('./assets/img/Body/body-bg.webp');
-  width: 100%;
-  height: max-content;
-
-}
-
-.ButtonParent{
-  width: 100%;
-  height: 20vh;
-}
-
-.aboutButton{
-  position: relative;
-  left: 50px;
-  top: 50px;
-  text-decoration: none;
-  font-family: "Gotham A","Gotham B";
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  font-weight: 200;
-  padding: 15px;
-  color: #fff;
-  background-color: #00214D;
-  border: 2px solid #00214D;
-  transition: 0.5s all ease;
-}
-
-.aboutButton:hover{
-  color: #00214D;
-  background-color: #fff;
-  border: 2px solid #00214D;
-  transition: 0.5s all ease-out;
-}
-
-
-.aboutItems{
-  width: 100%;
+.About {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.Title{
-  color: #00214D;
-  min-width: 500px;
-  letter-spacing: 3px;
-  font-weight: 400;
-  font-size: 40px;
-  color: rgb(165, 143, 21);
-}
-
-.Cards{
-  display: flex;
-  margin-top: 60px;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
   width: 100%;
-  height: 60vh;
+  height: 100vh;
+  background: url("../src/assets/img/ocean-pattern2.jpg") bottom / cover
+    no-repeat;
 }
 
-.Card1, .Card2, .Card3, .Card4{
-  position: static;
-  width: 20%;
-  min-width: 300px;
-  height: 100%;
-  border: 3px solid rgb(165, 143, 21);
-  display: flex;
-  flex-direction: column;
-  align-items:baseline;
-  background-color: rgb(250, 248, 248);
-  border-radius: 10px;
+.title {
+  color: whitesmoke;
+  letter-spacing: 1px;
+  font-family: "Dancing Script", cursive;
+  font-weight: inherit;
+  font-size: 40px;
 }
 
-.verified{
+.Quote {
+  color: whitesmoke;
+  letter-spacing: 1px;
+  font-family: "Dancing Script", cursive;
+  font-weight: inherit;
+  font-size: 25px;
+  padding-top: 20px;
+}
+
+.BackHome {
   position: relative;
-  left: 30px;
-  margin-top: 10px;
-  color: rgb(165, 143, 21);
-  width: 80px;
-  height: 70px;
-}
-
-.safe{
-  border-left: 2px solid #414141;
-  padding-left: 10px;
-  position: relative;
-  left: 30px;
+  background-color: transparent;
   top: 20px;
-  font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-  font-size: 1.55rem;
-  font-weight: 400;
-  line-height: 1.4;
-}
-
-.safeText{
-  position: relative;
-  width: 300px;
-  min-width: 100px;
-  text-align: start;
-  font-weight: 100;
-  top: 50px;
+  border: 2px solid #000000c5;
+  border-radius: 20px;
+  text-decoration: none;
+  color: whitesmoke;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
   padding: 20px;
-  font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-  color: #414141;
+  transition: 0.4s ease-in;
 }
 
+.BackHome:hover {
+  transition: 0.4s ease-out;
+  padding: 25px;
+  background-color: #00000094;
+}
