@@ -84,13 +84,6 @@ Video {
   color: #fff;
   width: 100px;
   height: 100px;
-  cursor: pointer;
-  transition: 0.7s ease-out;
-}
-
-.cardIcon:hover {
-  top: 170px;
-  transition: 0.5s ease-in;
 }
 
 /* ------Body------- */
@@ -197,64 +190,4 @@ Video {
   height: 80vh;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.3);
-}
-
-/* ---------Partners-------- */
-
-#Partners {
-  padding-top: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 90vh;
-  background-image: url("../../assets//img/Body/body-bg.webp");
-}
-
-.Partner1,
-.Partner2,
-.Partner3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30%;
-  height: 70vh;
-  border-radius: 30%;
-}
-
-.PartnersInfo {
-  color: #fffff0;
-  border-radius: 20px;
-  font-family: Helvetica Neue LT, Helvetica Neue, Helvetica, Arial,
-    -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif,
-    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-  font-size: 40px;
-  font-weight: 200;
-  text-align: center;
-  margin-top: 250px;
-  width: 500px;
-  height: fit-content;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.Partner1 {
-  background-image: url("../../assets//img/Partners/Partner1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.Partner2 {
-  background-image: url("../../assets//img/Partners/Partner2.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.Partner3 {
-  background-image: url("../../assets//img/Partners/Partner3.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }

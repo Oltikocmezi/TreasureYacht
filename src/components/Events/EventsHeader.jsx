@@ -47,26 +47,17 @@ const EventsHeader = () => {
           <div className="card1 ">
             <h1>{CardsContent[0].title1}</h1>
             <p>{CardsContent[0].text1}</p>
-            <a href="#Partners">
-              {" "}
-              <IoIosArrowDropdownCircle className="cardIcon" />{" "}
-            </a>
+            <IoIosArrowDropdownCircle className="cardIcon" />{" "}
           </div>
           <div className="card2">
             <h1>{CardsContent[1].title2}</h1>
             <p>{CardsContent[1].text2}</p>
-            <a href="#Partners">
-              {" "}
-              <IoIosArrowDropdownCircle className="cardIcon" />{" "}
-            </a>
+            <IoIosArrowDropdownCircle className="cardIcon" />{" "}
           </div>
           <div className="card3">
             <h1>{CardsContent[2].title3}</h1>
             <p>{CardsContent[2].text3}</p>
-            <a href="#Partners">
-              {" "}
-              <IoIosArrowDropdownCircle className="cardIcon" />{" "}
-            </a>
+            <IoIosArrowDropdownCircle className="cardIcon" />{" "}
           </div>
         </div>
       )}

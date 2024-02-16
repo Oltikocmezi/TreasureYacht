@@ -1,205 +1,175 @@
-
-*{
-    font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-    scroll-behavior: smooth;
+* {
+  font-family: Helvetica Neue LT, Helvetica Neue, Helvetica, Arial,
+    -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  scroll-behavior: smooth;
 }
 
-.Body1{
-    width: 100%;
-    height: 100vh;
-    background-image: url('../../assets/img/Body/Body2.jpg');
-    background-position:center ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
+.Body1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/img/Body/Body2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
-.text{
-    width: fit-content;
-    position: relative;
-    top: 650px;
-    left: 30px;
-    color: #fff;
-    font-weight: 300;
-    font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+.text {
+  width: fit-content;
+  position: relative;
+  top: 650px;
+  left: 30px;
+  color: #fff;
+  font-weight: 300;
+  font-family: Helvetica Neue LT, Helvetica Neue, Helvetica, Arial,
+    -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 }
-.text2{
-    position: relative;
-    top: 650px;
-    left: 30px;
-    color: #fff;
-    font-weight: 300;
-    font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-}
-
-.text2{
-    font-size: clamp(0px,3.132vw,60px);
-    letter-spacing: 2px;
-    width: 55%;
+.text2 {
+  position: relative;
+  top: 650px;
+  left: 30px;
+  color: #fff;
+  font-weight: 300;
+  font-family: Helvetica Neue LT, Helvetica Neue, Helvetica, Arial,
+    -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 }
 
-.btn1{
-    position: relative;
-    top: 670px;
-    left: 30px;
-    color: #fff;
-    display: inline-block;
-    width: 150px;
-    height: 50px;
-    border-radius: 10px;
-    border: 2px solid #03045e;
-    overflow: hidden;
-    transition: all 0.5s ease-in;
-    z-index: 1;
-    background-color: transparent;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 12px;
-    color: #fff;
-   }
-   
-   .btn1::before,
-   .btn1::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 0;
-    height: 100%;
-    transform: skew(15deg);
-    transition: all 0.5s;
-    overflow: hidden;
-    z-index: -1;
-   }
-   
-   .btn1::before {
-    left: -10px;
-    background: #2e2d2c;
-   }
-   
-   .btn1::after {
-    right: -10px;
-    background: #2e2d2c;
-   }
-   
-   .btn1:hover::before,
-   .btn1:hover::after {
-    width: 58%;
-   }
-   
-   .btn1:hover span {
-    color: #2e2d2c;
-    transition: 0.3s;
-   }
-   
-   .btn1 span {
-    color: #2e2d2c;
-    font-size: 18px;
-    transition: all 0.3s ease-in;
-   }
-
-   /* ---------Commitment------------ */
-
-   .Commitment-sec{
-    display: flex;
-    flex-direction: column;
-    background-image: url('../../assets/img/Body/body-bg.webp');
-    width: 100%;
-    height: fit-content;
-   }
-
-   .Commitment-div{
-    width: 100%;
-    height: 50vh;
-   }
-
-   .Commitment-btn{
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    border-radius: 5px;
-    background-color: #2e2d2c;
-    color: #fff;
-    padding: 15px;
-    text-decoration: none;
-    border: 2px solid #03045e;
-    font-size: 18px;
-    font-weight: 300;
-    font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-    transition: 0.6s all ease;
+.text2 {
+  font-size: clamp(0px, 3.132vw, 60px);
+  letter-spacing: 2px;
+  width: 55%;
 }
 
-.Commitment-btn:hover{
-    color: #2e2d2c;
-    border: 2px solid #03045e;
-    background-color: #fff;
-    transition: 0.6s ease-out;
+.btn1 {
+  position: relative;
+  top: 670px;
+  left: 30px;
+  color: #fff;
+  background: #a2622b79;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 50px;
+  border-radius: 10px;
+  transition: 0.4s all;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-.Commitment-h1{
-    position: absolute;
-    top: 100px;
-    left: 50px;
-    width: 70%;
-    height: fit-content;
-    font-weight: 400;
-    font-size: 8rem;
-    letter-spacing: 2px;
-    line-height: 8rem;
+.btn1:hover {
+  background: #a2622b;
 }
 
-.Commitment-img{
-    width: 100%;
-    height: 100vh;
-    background-image: url('../../assets/img/CommitmentBody.avif');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+/* ---------Commitment------------ */
+
+.Commitment-sec {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../assets/img/Body/body-bg.webp");
+  width: 100%;
+  height: fit-content;
 }
 
-.Commitment-info{
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    align-self: center;
-    width: 100%;
-    height: 150vh;
-    background-image: url('../../assets/img/Body/body-bg.webp');
+.Commitment-div {
+  width: 100%;
+  height: 50vh;
 }
 
-.CommitmentH1{
-    padding-left: 100px;
-    padding-top: 100px;
-    color: #2e2d2c;
-    font-weight: 200;
-    letter-spacing: 2px;
-    font-size: 40px;
-    width: 40%;
-    height: fit-content;
-}
-.CommitmentH2{
-    position: relative;
-    top: 20px;
-    color: #2e2d2c;
-    font-weight: 200;
-    letter-spacing: 2px;
-    font-size: 40px;
-    width: 40%;
-    height: fit-content;
-    align-self: last baseline;
+.Commitment-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 5px;
+  background-color: #2e2d2c;
+  color: #fff;
+  padding: 15px;
+  text-decoration: none;
+  border: 2px solid #03045e;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: Helvetica Neue LT, Helvetica Neue, Helvetica, Arial,
+    -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  transition: 0.6s all ease;
 }
 
-.CommitmentVideo{
-    padding-top: 20px;
-    align-self: center;
-    width: 50%;
-    height: 70vh;
-    
+.Commitment-btn:hover {
+  color: #2e2d2c;
+  border: 2px solid #03045e;
+  background-color: #fff;
+  transition: 0.6s ease-out;
 }
 
-Video{
-    width: 40%;
-    height: 100%;
-    object-fit: cover;
+.Commitment-h1 {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 70%;
+  height: fit-content;
+  font-weight: 400;
+  font-size: 8rem;
+  letter-spacing: 2px;
+  line-height: 8rem;
+}
+
+.Commitment-img {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/img/CommitmentBody.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Commitment-info {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  height: 150vh;
+  background-image: url("../../assets/img/Body/body-bg.webp");
+}
+
+.CommitmentH1 {
+  padding-left: 100px;
+  padding-top: 100px;
+  color: #2e2d2c;
+  font-weight: 200;
+  letter-spacing: 2px;
+  font-size: 40px;
+  width: 40%;
+  height: fit-content;
+}
+.CommitmentH2 {
+  position: relative;
+  top: 20px;
+  color: #2e2d2c;
+  font-weight: 200;
+  letter-spacing: 2px;
+  font-size: 40px;
+  width: 40%;
+  height: fit-content;
+  align-self: last baseline;
+}
+
+.CommitmentVideo {
+  padding-top: 20px;
+  align-self: center;
+  width: 50%;
+  height: 70vh;
+}
+
+Video {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
 }
