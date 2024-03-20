@@ -66,9 +66,9 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .nav-header-div {
+  /* .nav-header-div {
     height: 100vh;
-  }
+  } */
   .box-div {
     position: absolute;
   }

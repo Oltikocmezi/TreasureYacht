@@ -1,12 +1,9 @@
 .ocean {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 180vh;
-  background-image: url("../../assets/img/map.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 120vh;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
 }
@@ -17,43 +14,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 250px;
-  width: 500px;
-  height: 500px;
+  width: fit-content;
+  height: fit-content;
+}
+.TreasureYachtOcean {
+  position: absolute;
+  width: 100%;
+  height: 120vh;
+  object-fit: cover;
 }
 
 .ocean-container h1 {
   font-family: "Dancing Script", cursive;
-  font-size: 80px;
-  border-left: 1px solid #2e2d2c;
-  border-right: 1px solid #2e2d2c;
+  width: 100%;
+  font-size: 100px;
   font-weight: inherit;
-  color: #2e2d2c;
-}
-
-.ocean-container a {
-  position: relative;
-  top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 250px;
-  height: 50px;
-  font-weight: bold;
-  text-decoration: none;
-  background: #a2622b68;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: all 0.4s;
-  border-radius: 20px;
-}
-
-.ocean-container a:hover {
-  background: #a2622b;
-}
-
-.Arrow-right {
-  margin-left: 15px;
-  size: 50px;
+  color: whitesmoke;
+  letter-spacing: 5px;
 }

@@ -13,7 +13,7 @@ const Home = () => {
       <Body YachtBtn="Explore" EventsBtn="Explore" YachtClubBtn="Explore" />
       <CommitmentHome CommitmentBtn="Find out more →" />
       <HomeSlider TresureYacht="--Treasure Yacht--" />
-      <Ocean h1="Treasure Yacht's" ExploreButton="Explore Map" />
+      <Ocean h1="Treasure Yacht's" />
       <Footer />
     </div>
   );
