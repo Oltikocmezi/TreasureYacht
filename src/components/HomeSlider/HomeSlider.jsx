@@ -1,8 +1,8 @@
 import { useRef, useEffect, useState } from "react";
-import "../HomeSlider/homeSlider.css";
 import { motion } from "framer-motion";
 import Images from "./Images";
 import "../Functions/Scroll";
+import "../HomeSlider/homeSlider.css";
 
 const HomeSliderContent = [
   {
@@ -39,7 +39,7 @@ const HomeSlider = (props) => {
             {Images.map((image) => {
               return (
                 <motion.div className="item" key={image}>
-                  <img src={image} alt="" />
+                  <img src={image} alt="img" />
                   <p className="TreasureYacht">{TresureYacht}</p>
                 </motion.div>
               );

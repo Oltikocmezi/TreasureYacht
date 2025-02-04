@@ -22,7 +22,7 @@
 /* -------Yacht Content-------- */
 
 .YachtDiv {
-  background-image: url('../../assets/img/Body/body-bg.webp');
+  background-image: url("../../assets/img/Body/body-bg.webp");
   width: 100%;
   height: 40vh;
   display: flex;
@@ -54,7 +54,7 @@
   flex-direction: column;
   width: 100%;
   height: 80vh;
-  background: url('../../assets/img/Body/LadyLi.avif') center / cover;
+  background: url("../../assets/img/Body/LadyLi.avif") center / cover;
   border-top-left-radius: 80%;
 }
 
@@ -86,82 +86,52 @@
 
 /* -------Yacht Slider-------- */
 
-.YachtSlider{
+.YachtSlider {
   display: flex;
-  margin-top: 40px;
+  margin-top: 60px;
   flex-direction: column;
   width: 100%;
   height: 120vh;
   background-color: #c2c6c9;
 }
 
-.YachtSlider2{
+.YachtSlider2 {
   width: 100%;
-  height: 140vh;   
+  height: 140vh;
 }
 
-.item{
+.item {
   height: 100%;
   width: 100%;
   padding: 10px;
-
 }
 
-.item img{
+.item img {
   position: relative;
-  left: 0;
+  left: auto;
   width: 1200px;
   height: 100vh;
   pointer-events: none;
 }
 
-.inner-carousel{
+.inner-carousel {
   display: flex;
 }
 
-.carousel{
+.carousel {
   cursor: grab;
   overflow: hidden;
 }
 
-.TreasureYacht{
-  font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+.TreasureYacht {
+  font-family: Helvetica Neue LT, Helvetica Neue, Helvetica, Arial,
+    -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   font-style: italic;
   font-weight: 300;
   color: #2e2d2c;
   font-size: 25px;
-} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 /* *{
     text-rendering: optimizeLegibility;
@@ -187,12 +157,10 @@
     left: 0;
     background-color: rgba(0, 0, 0, .4);
   } */
-  
 
+/* -------Yacht Content-------- */
 
-  /* -------Yacht Content-------- */
-
-  /* .YachtDiv{
+/* .YachtDiv{
     background-image: url('../../assets/img/Body/body-bg.webp');
     width: 100%;
     height: 40vh;
@@ -261,9 +229,8 @@
     color: #2e2d2c;
   } */
 
-  /* -------Yacht Slider-------- */
+/* -------Yacht Slider-------- */
 
-  
 /* .YachtSlider{
     display: flex;
     margin-top: 40px;
@@ -310,7 +277,3 @@
   color: #2e2d2c;
   font-size: 25px;
 } */
-
-
-
-

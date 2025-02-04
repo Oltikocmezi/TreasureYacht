@@ -23,7 +23,7 @@ const CommitmentContent = (props) => {
   return (
     <section className="Commitment-sec">
       <div className="Commitment-div">
-        <a className="Commitment-btn" href="/Home">
+        <a className="Commitment-btn" href="/home">
           {btn}
         </a>
         <h1 className="Commitment-h1">{CommitmentContentArray[0].title1}</h1>

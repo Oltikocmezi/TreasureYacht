@@ -1,88 +1,109 @@
-import React from 'react'
-import '../Membership/membership.css';
+import React from "react";
+/* import React, { useContext, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import SignInBg from "../../assets/img/SignInUp/SignBackground.jpg";
+import NavBar from "../NavBar/NavBar";
+import { MdAccountCircle } from "react-icons/md";
+import { AuthContext } from "../../context/AuthContext";
+import apiRequest from "../../lib/apiRequest"; */
 
-// const signUpButton = document.getElementById('signUp');
-// const signInButton = document.getElementById('signIn');
-// const container = document.getElementById('container');
+function Membership() {
+  /* const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [isMenuOpen, setMenuOpen] = useState(false);
 
-// signUpButton.addEventListener('click', () =>
-//     container.classList.add('right-panel-active'));
+  const { updateUser } = useContext(AuthContext);
 
-// signInButton.addEventListener('click', () =>
-//     container.classList.remove('right-panel-active'));
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+  const navigate = useNavigate();
 
- const MembershipContent = () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    setError("");
+    const formData = new FormData(e.target);
+
+    const username = formData.get("username");
+    const password = formData.get("password");
+
+    try {
+      const res = await apiRequest.post("/auth/login", {
+        username,
+        password,
+      });
+
+      updateUser(res.data);
+
+      navigate("/");
+    } catch (err) {
+      console.log(err);
+      setError(err.response.data.message);
+    } finally {
+      setIsLoading(false);
+    }
+  }; */
   return (
-
-
-<div>
-   
-      {/* <div class="ocean">
-          <div class="wave"></div>
-          <div class="wave"></div>
+    <>
+      <div
+        className="font-mono w-full h-screen flex flex-col justify-center items-center"
+        /* style={{
+          backgroundImage: `url(${SignInBg})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }} */
+      >
+        <form
+          // onSubmit={handleSubmit}
+          className=" flex flex-col justify-around items-center bg-black bg-opacity-80 rounded-3xl h-fit w-80 px-6 py-20 mt-24 md:w-96 lg:w-5/12"
+        >
+          {/* <MdAccountCircle className="h-24 w-24 text-green-900" /> */}
+          <input
+            className="p-4 bg-transparent border-solid border-2 border-green-900 rounded-xl mt-6 text-white"
+            name="username"
+            placeholder="Username"
+            type="text"
+            required
+            minLength={3}
+            maxLength={20}
+          />
+          <input
+            className="p-4 mt-4 bg-transparent text-white border-solid border-2 border-green-900 rounded-xl"
+            name="password"
+            placeholder="Password"
+            type="password"
+            required
+          />
+          {/* <Link
+              className="text-right w-60 text-blue-700 hover:text-blue-500 font-bold"
+              to="/"
+            >
+              Forgot password?
+            </Link> */}
+          <button
+            className="mt-8 bg-green-900 bg-opacity-70 text-white p-4 w-64 rounded-full text-center"
+            //   disabled={isLoading}
+          >
+            Log in
+          </button>
+          {/* {error && <span className="text-red-600">{error}</span>} */}
+          <h1 className="text-white mt-4">Or</h1>
+          <button
+            href="/"
+            className="mt-8 bg-red-800 bg-opacity-90 text-white p-4 w-64 rounded-xl text-center"
+          >
+            Continue With Google
+          </button>{" "}
+          */
+          <p className="mt-6 tracking-tight text-md px-2 text-center w-80 text-white text-bold">
+            Don't you have an account Get Started
+          </p>
+        </form>
       </div>
-
-          <section>
-          <div class="container" id="container">
-              <div class="form-container sign-up-container">  
-                      <form action="/">
-                          <h1>Sign Up</h1>
-                          <div className="social-container">
-                              <a href="https://Github.com/YasinDehfuli" target="_blank" rel="noreferrer" className="social"><i className="fab fa-github"></i></a>
-                              <a href="https://Codepen.io/YasinDehfuli" target="_blank" rel="noreferrer" className="social"><i className="fab fa-codepen"></i></a>
-                              <a href="mailto:Ydehfuli@gmail.com" target="_blank" rel="noreferrer" className="social"><i className="fab fa-google"></i></a>
-                          </div>
-                          <span>Or use your Email for registration</span>
-                          <label>
-                              <input type="text" placeholder="Name"/>
-                          </label>
-                          <label>
-                              <input type="email" placeholder="Email"/>
-                          </label>
-                          <label>
-                              <input type="password" placeholder="Password"/>
-                          </label>
-                          <button style={{marginTop: 9 + 'px' }}>Sign Up</button>
-                      </form>
-                  </div>
-                  <div className="form-container sign-in-container">
-                      <form action="/">
-                          <h1>Sign in</h1>
-                          <div class="social-container">
-                              <a href="https://Github.com/YasinDehfuli" target="_blank" rel="noreferrer" className="social"><i className ="fab fa-github"></i></a>
-                              <a href="https://Codepen.io/YasinDehfuli" target="_blank" rel="noreferrer" className="social"><i className="fab fa-codepen"></i></a>
-                              <a href="mailto:Ydehfuli@gmail.com" target="_blank" rel="noreferrer" className="social"><i className="fab fa-google"></i></a>
-                          </div>
-                          <span> Or sign in using E-Mail Address</span>
-                          <label>
-                              <input type="email" placeholder="Email"/>
-                          </label>
-                          <label>
-                              <input type="password" placeholder="Password"/>
-                          </label>
-                          <a href="/">Forgot your password?</a>
-                          <button>Sign In</button>
-                      </form>
-                  </div>
-                  <div className="overlay-container">
-                      <div className="overlay">
-                          <div className="overlay-panel overlay-left">
-                              <h1>Log in</h1>
-                              <p>Sign in here if you already have an account </p>
-                              <button className="ghost mt-5" id="signIn">Sign In</button>
-                          </div>
-                          <div className="overlay-panel overlay-right">
-                              <h1>Create, Account!</h1>
-                              <p>Sign up if you still don't have an account ... </p>
-                              <button className="ghost" id="signUp">Sign Up</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </section> */}
-
-</div>
-  )
+    </>
+  );
 }
 
-export default MembershipContent;
+export default Membership;

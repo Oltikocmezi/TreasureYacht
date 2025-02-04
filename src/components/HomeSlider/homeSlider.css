@@ -1,68 +1,71 @@
-.Content{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 190vh;
-    background-color: #c2c6c9;
+.Content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 190vh;
+  background-color: #c2c6c9;
 }
 
-.Content1{
-    width: 100%;
-    height: 70vh;
+.Content1 {
+  width: 100%;
+  height: 70vh;
 }
 
-.Content1 h1{
-    position: relative;
-    border-left: 2px solid #2e2d2c;
-    padding-left: 10px;
-    left: 50px;
-    font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-    top: 350px;
-    width: 75%;
-    font-size: clamp(0px,3.132vw,60px);
-    font-weight: 300;
-    color: #2e2d2c;
-    text-align: start;
-    opacity: 1;
-    line-height: 1.22;
-    overflow: hidden;
+.Content1 h1 {
+  position: relative;
+  border-left: 2px solid #2e2d2c;
+  padding-left: 10px;
+  left: 50px;
+  font-family: Helvetica Neue LT, Helvetica Neue, Helvetica, Arial,
+    -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  top: 350px;
+  width: 75%;
+  font-size: clamp(0px, 3.132vw, 60px);
+  font-weight: 300;
+  color: #2e2d2c;
+  text-align: start;
+  opacity: 1;
+  line-height: 1.22;
+  overflow: hidden;
 }
 
-.Content2{
-   width: 100%;
-   height: 140vh;   
+.Content2 {
+  width: 100%;
+  height: 140vh;
 }
 
-.item{
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-
+.item {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
 }
 
-.item img{
-    position: relative;
-    left: 0;
-    width: 1200px;
-    height: 100vh;
-    pointer-events: none;
+.item img {
+  position: relative;
+  left: 0;
+  width: 1200px;
+  height: 100vh;
+  pointer-events: none;
 }
 
-.inner-carousel{
-    display: flex;
+.inner-carousel {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-.carousel{
-    cursor: grab;
-    overflow: hidden;
-    
+.carousel {
+  cursor: grab;
+  overflow: hidden;
 }
 
-.TreasureYacht{
-    font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-    font-style: italic;
-    font-weight: 300;
-    color: #2e2d2c;
-    font-size: 25px;
+.TreasureYacht {
+  font-family: Helvetica Neue LT, Helvetica Neue, Helvetica, Arial,
+    -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-style: italic;
+  font-weight: 300;
+  color: #2e2d2c;
+  font-size: 25px;
 }
-
