@@ -11,11 +11,6 @@ const MenuItems = [
     cName: "links ",
   },
   {
-    title: "About",
-    url: "/About",
-    cName: "links",
-  },
-  {
     title: "Yachts",
     url: "/Yacht",
     cName: "links",
