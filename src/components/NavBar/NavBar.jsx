@@ -3,7 +3,6 @@ import "../NavBar/navbar.css";
 import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import "../Functions/Scroll";
-import logo1 from "../../assets/img/Icons/icons8-ship-wheel-101.png";
 
 const MenuItems = [
   {
@@ -44,7 +43,6 @@ const NavBar = ({ isMenuOpen, toggleMenu }) => {
   return (
     <div>
       <nav className="navbar">
-        <img src={logo1} alt="logo" className="logo" />
         <ul
           className={Mobile || isMenuOpen ? "nav-links-mobile " : "nav-links "}
           onClick={() => setMobile(true)}

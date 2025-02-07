@@ -3,11 +3,20 @@
   scroll-behavior: smooth;
 }
 
+.logo {
+  position: relative;
+  top: 10px;
+  width: 100px;
+  height: 100px;
+}
+
 .nav-header-div {
   background-image: url("../../assets/img/Body/Header2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 100vh;
 }

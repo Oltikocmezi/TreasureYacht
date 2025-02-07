@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./header.css";
 import NavBar from "../NavBar/NavBar";
+import logo from "../../assets/img/Icons/icons8-ship-wheel-101.png";
 
 const HeaderContent = [
   {
@@ -21,6 +22,7 @@ const Header = (props) => {
   return (
     <div>
       <div className="nav-header-div">
+        <img src={logo} alt="logo" className="logo" />
         <NavBar isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
 
         {isMenuOpen ? null : (

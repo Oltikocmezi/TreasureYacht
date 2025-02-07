@@ -1,6 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import YachtImages from "./YachtImages";
 import "./yacht.css";
+import "../HomeSlider/homeSlider.css";
 import { motion } from "framer-motion";
 import "../Functions/Scroll";
 
@@ -9,6 +10,7 @@ const YachtSlider = () => {
   const carousel = useRef();
 
   useEffect(() => {
+    console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, []);
 

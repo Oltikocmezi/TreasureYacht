@@ -19,6 +19,7 @@ const HomeSlider = (props) => {
   const carousel = useRef();
 
   useEffect(() => {
+    console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, []);
 
@@ -30,7 +31,11 @@ const HomeSlider = (props) => {
       </div>
 
       <div className="Content2">
-        <motion.div ref={carousel} className="carousel">
+        <motion.div
+          ref={carousel}
+          className="carousel"
+          whileTap={{ cursor: "grabbing" }}
+        >
           <motion.div
             drag="x"
             dragConstraints={{ right: 0, left: -width }}
