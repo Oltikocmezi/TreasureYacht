@@ -6,7 +6,6 @@ import Yacht from "./Pages/Yacht";
 import Events from "./Pages/Events";
 import YachtClub from "./Pages/YachtClub";
 import Commitment from "./Pages/Commitment";
-import MembershipContent from "./components/Membership/MembershipContent";
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
           <Route path="/Events" element={<Events />} />
           <Route path="/YachtClub" element={<YachtClub />} />
           <Route path="/Commitment" element={<Commitment />} />
-          <Route path="/Membership" element={<MembershipContent />} />
         </Routes>
       </BrowserRouter>
     </div>

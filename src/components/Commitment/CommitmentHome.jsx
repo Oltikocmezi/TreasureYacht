@@ -12,12 +12,14 @@ const CommitmentHomeArray = [
 const Commitment = (props) => {
   const { CommitmentBtn } = props;
   return (
-    <div className="Body1">
-      <p className="text reveal">{CommitmentHomeArray[0].title1}</p>
-      <h2 className="text2 reveal">{CommitmentHomeArray[0].text1}</h2>
-      <a className="btn1 " href="/Commitment">
-        {CommitmentBtn}
-      </a>
+    <div id="Commitment">
+      <div className="Body1">
+        <p className="text reveal">{CommitmentHomeArray[0].title1}</p>
+        <h2 className="text2 reveal">{CommitmentHomeArray[0].text1}</h2>
+        <a className="btn1 " href="/Commitment">
+          {CommitmentBtn}
+        </a>
+      </div>
     </div>
   );
 };

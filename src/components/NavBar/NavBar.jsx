@@ -25,11 +25,6 @@ const MenuItems = [
     url: "/YachtClub",
     cName: "links",
   },
-  {
-    title: "Membership",
-    url: "/Membership",
-    cName: "links",
-  },
 ];
 
 const NavBar = ({ isMenuOpen, toggleMenu }) => {

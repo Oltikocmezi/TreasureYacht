@@ -45,7 +45,7 @@ const YachtClubBody = (props) => {
         <div className="ClubChild4">
           <h1 className="Child4H1">{YachtClubContent[2].title3}</h1>
           <p className="Child4P2">{YachtClubContent[2].text3}</p>
-          <a className="MemberButton" href="/Membership">
+          <a className="MemberButton" href="/Home">
             {Member}
           </a>
         </div>
