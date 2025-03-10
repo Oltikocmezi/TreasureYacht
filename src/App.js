@@ -10,6 +10,7 @@ import Commitment from "./Pages/Commitment";
 function App() {
   return (
     <div className="App">
+      {/* <BrowserRouter basename="/TreasureYacht"> */}
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Display />} />

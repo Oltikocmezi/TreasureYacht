@@ -1,6 +1,7 @@
 import React from "react";
 import "./body.css";
 import "../Functions/Scroll";
+import { Link } from "react-router-dom";
 
 const bodyContent = [
   {
@@ -30,9 +31,9 @@ const Body = (props) => {
           <div className="box1-content reveal">
             <h1 className="box-h1">{bodyContent[0].title1}</h1>
             <p className="box-p">{bodyContent[1].text1}</p>
-            <a className="link-body" href="/Yacht">
+            <Link className="link-body" to="/Yacht">
               {YachtBtn}
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -40,9 +41,9 @@ const Body = (props) => {
           <div className="box1-content reveal">
             <h1 className="box-h1">{bodyContent[0].title2}</h1>
             <p className="box-p">{bodyContent[1].text2}</p>
-            <a className="link-body" href="/Events">
+            <Link className="link-body" to="/Events">
               {EventsBtn}
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -50,9 +51,9 @@ const Body = (props) => {
           <div className="box1-content reveal">
             <h1 className="box-h1">{bodyContent[0].title3}</h1>
             <p className="box-p">{bodyContent[1].text3}</p>
-            <a className="link-body" href="/YachtClub">
+            <Link className="link-body" to="/YachtClub">
               {YachtClubBtn}
-            </a>
+            </Link>
           </div>
         </div>
       </div>

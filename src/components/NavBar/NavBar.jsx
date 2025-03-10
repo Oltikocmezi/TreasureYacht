@@ -3,6 +3,7 @@ import "../NavBar/navbar.css";
 import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import "../Functions/Scroll";
+import { Link } from "react-router-dom";
 
 const MenuItems = [
   {
@@ -40,16 +41,16 @@ const NavBar = ({ isMenuOpen, toggleMenu }) => {
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
-                <a
+                <Link
                   className={item.cName}
-                  href={item.url}
+                  to={item.url}
                   onClick={() => {
                     setMobile(false);
                     toggleMenu();
                   }}
                 >
                   {item.title}
-                </a>
+                </Link>
               </li>
             );
           })}
