@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/TreasureYacht/static/css/main.a938f736.css",
-    "main.js": "/TreasureYacht/static/js/main.c82bb05c.js",
+    "main.js": "/TreasureYacht/static/js/main.8dcf4150.js",
     "static/js/453.d0e9c1ff.chunk.js": "/TreasureYacht/static/js/453.d0e9c1ff.chunk.js",
     "static/media/Boat.mp4": "/TreasureYacht/static/media/Boat.8697c693ee76d24c386d.mp4",
     "static/media/Events-partys.mp4": "/TreasureYacht/static/media/Events-partys.97f0e7103665eed6f6cd.mp4",
@@ -35,11 +35,11 @@
     "static/media/body-bg.webp": "/TreasureYacht/static/media/body-bg.f2beaef57ea5d4ffe640.webp",
     "index.html": "/TreasureYacht/index.html",
     "main.a938f736.css.map": "/TreasureYacht/static/css/main.a938f736.css.map",
-    "main.c82bb05c.js.map": "/TreasureYacht/static/js/main.c82bb05c.js.map",
+    "main.8dcf4150.js.map": "/TreasureYacht/static/js/main.8dcf4150.js.map",
     "453.d0e9c1ff.chunk.js.map": "/TreasureYacht/static/js/453.d0e9c1ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a938f736.css",
-    "static/js/main.c82bb05c.js"
+    "static/js/main.8dcf4150.js"
   ]
 }
