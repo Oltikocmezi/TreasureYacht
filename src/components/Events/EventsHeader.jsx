@@ -1,66 +1,55 @@
-import React, { useState } from "react";
-import "./events.css";
+import React from "react";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import EventsVideoHeader from "../../assets/img/Videos/EventsHeader.mp4";
 import "../Functions/Scroll";
-import NavBar from "../NavBar/NavBar";
 
-const CardsContent = [
+const cards = [
   {
-    title1: "Having a Party?",
-    text1:
-      "Our team of designer's arrange some quality event's, like birthdays, meeting's and a lot more.",
+    title: "Having a Party?",
+    text: "Our team arranges quality events — birthdays, meetings, and much more.",
   },
   {
-    title2: "Addressing an Event?",
-    text2:
-      "Event's may bring a lot of joy when owning a yacht, like the f1 race you can experience every year on Monaco's port.",
+    title: "Addressing an Event?",
+    text: "Events bring joy when owning a yacht, like the F1 race in Monaco every year.",
   },
   {
-    title3: "Having a meet up?",
-    text3:
-      "It's a traditional way of saying welcome to new members of the group by linking together to enjoy that new experience.",
+    title: "Having a meet up?",
+    text: "Welcome new members by linking together to enjoy that new experience.",
   },
 ];
 
 const EventsHeader = () => {
-  const [isMenuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!isMenuOpen);
-  };
   return (
-    <section className="EventsSection">
-      <div className="EventsNavOverlay"></div>
+    <section className="relative min-h-screen w-full">
       <video
         src={EventsVideoHeader}
         autoPlay
         loop
         muted
-        className="EventsHeaderVideo"
-      ></video>
+        playsInline
+        className="absolute inset-0 h-full w-full object-cover"
+      />
+      <div className="ty-overlay-dark" />
 
-      <NavBar isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
-
-      {isMenuOpen ? null : (
-        <div className="CardContainer">
-          <div className="card1 ">
-            <h1>{CardsContent[0].title1}</h1>
-            <p>{CardsContent[0].text1}</p>
-            <IoIosArrowDropdownCircle className="cardIcon" />{" "}
-          </div>
-          <div className="card2">
-            <h1>{CardsContent[1].title2}</h1>
-            <p>{CardsContent[1].text2}</p>
-            <IoIosArrowDropdownCircle className="cardIcon" />{" "}
-          </div>
-          <div className="card3">
-            <h1>{CardsContent[2].title3}</h1>
-            <p>{CardsContent[2].text3}</p>
-            <IoIosArrowDropdownCircle className="cardIcon" />{" "}
-          </div>
+      <div className="relative z-10 flex min-h-screen flex-col justify-end px-4 pb-12 pt-24">
+        <div className="mx-auto mb-8 w-full max-w-6xl">
+          <p className="ty-eyebrow text-club-gold">Events</p>
+          <h1 className="ty-heading mt-2 text-4xl text-white sm:text-5xl">Unforgettable moments</h1>
         </div>
-      )}
+
+        <div className="mx-auto flex w-full max-w-6xl flex-wrap items-stretch justify-center gap-6">
+          {cards.map(({ title, text }) => (
+            <div
+              key={title}
+              className="ty-card-dark flex min-h-[280px] w-full max-w-[400px] flex-col items-center rounded-2xl p-8 text-center sm:min-h-[320px]"
+            >
+              <h2 className="font-playfair text-2xl font-light italic text-white">{title}</h2>
+              <p className="mt-4 flex-1 text-sm leading-relaxed text-white/75">{text}</p>
+              <IoIosArrowDropdownCircle className="mt-4 h-12 w-12 text-club-gold" />
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 };

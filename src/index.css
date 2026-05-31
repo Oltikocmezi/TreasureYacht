@@ -1,17 +1,51 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth text-lg font-normal;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply m-0 antialiased text-ink;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+  }
+}
+
+@layer components {
+  .reveal {
+    @apply relative translate-y-[150px] opacity-0 transition-all duration-[2000ms] ease-in-out;
+  }
+
+  .reveal.active {
+    @apply translate-y-0 opacity-100;
+  }
+
+  .ty-eyebrow {
+    @apply font-ysabeau text-xs uppercase tracking-[0.25em] text-treasure;
+  }
+
+  .ty-heading {
+    @apply font-playfair font-bold italic text-navy;
+  }
+
+  .ty-card {
+    @apply rounded-2xl border border-ink/10 bg-white shadow-[0_8px_40px_-12px_rgba(0,33,77,0.12)];
+  }
+
+  .ty-card-dark {
+    @apply rounded-2xl border border-white/10 bg-navy-card backdrop-blur-md;
+  }
+
+  .ty-page-bg {
+    @apply bg-gradient-to-br from-[#f8f6f3] via-white to-[#f0ebe3];
+  }
+
+  .ty-overlay-dark {
+    @apply absolute inset-0 bg-gradient-to-b from-navy/70 via-navy/50 to-[#001228]/80;
+  }
+}

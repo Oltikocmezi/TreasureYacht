@@ -7,7 +7,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "axios": "^1.3.4",
+    "appwrite": "^25.2.0",
     "framer-motion": "^10.12.21",
     "hero-slider": "^3.1.0",
     "react": "^18.2.0",
@@ -24,7 +24,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "setup:appwrite": "node scripts/setup-appwrite.js"
   },
   "eslintConfig": {
     "extends": [
@@ -45,7 +46,9 @@
     ]
   },
   "devDependencies": {
+    "dotenv": "^16.6.1",
     "gh-pages": "^6.3.0",
+    "node-appwrite": "^14.2.0",
     "tailwindcss": "^3.4.13",
     "webpack-bundle-analyzer": "^4.10.2",
     "webpack-cli": "^6.0.1"

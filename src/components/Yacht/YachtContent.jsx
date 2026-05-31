@@ -1,6 +1,7 @@
 import React from "react";
-import "./yacht.css";
 import "../Functions/Scroll";
+import bodyBg from "../../assets/img/Body/body-bg.webp";
+import ladyLi from "../../assets/img/Body/LadyLi.avif";
 
 const YachtContentArray = [
   {
@@ -31,17 +32,39 @@ const YachtContentArray = [
   },
 ];
 
+const textBlockClass =
+  "flex h-[60vh] w-full flex-col items-center justify-center bg-cover bg-center";
+
 function YachtContent() {
   return (
     <div>
-      <div className="YachtDiv">
-        <h1>{YachtContentArray[0].title1}</h1>
-        <p>{YachtContentArray[0].text1}</p>
+      <div
+        className={textBlockClass}
+        style={{ backgroundImage: `url(${bodyBg})` }}
+      >
+        <h1 className="w-[700px] text-center text-[30px] font-medium tracking-[7px] max-lg:w-[90%]">
+          {YachtContentArray[0].title1}
+        </h1>
+        <p className="relative top-[35px] w-[900px] text-center text-xl font-normal tracking-[2px] max-lg:w-[90%]">
+          {YachtContentArray[0].text1}
+        </p>
       </div>
-      <div className="YachtContent "></div>
-      <div className="YachtDiv">
-        <h1>{YachtContentArray[1].title2}</h1>
-        <p>{YachtContentArray[1].text2}</p>
+
+      <div
+        className="h-[80vh] w-full rounded-tl-[80%] bg-cover bg-center"
+        style={{ backgroundImage: `url(${ladyLi})` }}
+      />
+
+      <div
+        className={textBlockClass}
+        style={{ backgroundImage: `url(${bodyBg})` }}
+      >
+        <h1 className="w-[700px] text-center text-[30px] font-medium tracking-[7px] max-lg:w-[90%]">
+          {YachtContentArray[1].title2}
+        </h1>
+        <p className="relative top-[35px] w-[900px] text-center text-xl font-normal tracking-[2px] max-lg:w-[90%]">
+          {YachtContentArray[1].text2}
+        </p>
       </div>
     </div>
   );
